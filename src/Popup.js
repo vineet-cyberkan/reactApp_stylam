@@ -2,6 +2,7 @@
 import React from 'react';
 import './Popup.css';
 import {ButtonToolbar, Modal, Button} from 'react-bootstrap';
+import RouterLinks from './Router';
 
 
 // import Modal from 'react-bootstrap/Modal';
@@ -28,23 +29,7 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="">
-	    	<div className=""><a href="/products/stylam"><span className="">Stylam HPL</span></a></div>
-	        <div className=""><a href="/products/violam"><span className="">Violam HPL</span></a></div>
-	        <div className=""><a href="/products/viotouch"><span className="">Viotouch HPL</span></a></div>
-	        <div className=""><a href="/products/leader"><span className="">Leader HPL</span></a></div>
-	    </div>
-	    <hr />
-	    <div className="">
-	    	<div className=""><a href="/products/handpicked-vol-1"><span className=""><span>Handpicked Assortment Vol 1</span></span></a></div>
-	        <div className=""><a href="/products/handpicked-vol-2"><span className="">Handpicked Assortment Vol 2</span></a></div>
-	        <div className=""><a href="/products/elite-vol-1"><span className="">Elite Assortment</span></a></div>
-	        <div className=""><a href="/products/solid-colours"><span className="">Colours Therapy</span></a></div>
-	        <div className=""><a href="/products/texture-vol-1"><span className="">Texture Vol 1</span></a></div>
-	        <div className=""><a href="/products/texture-vol-2"><span className="">Texture Vol 2</span></a></div>
-	        <div className=""><a href="/products/elegant-vol-1"><span className="">Elegant Assortment 1</span></a></div>
-	        <div className=""><a href="/products/elegant-vol-2"><span className="">Elegant Assortment 2</span></a></div>
-	    </div>
+        <RouterLinks />
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
