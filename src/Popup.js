@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Popup.css';
 import ReactBootstrap, {ButtonToolbar, Modal, Button} from 'react-bootstrap';
 
 function Popup() {
@@ -19,7 +20,7 @@ function Popup() {
             Large Modal
           </Modal.Title>
         </Modal.Header>
-        
+
         <Modal.Body>...</Modal.Body>
       </Modal>
     </ButtonToolbar>
